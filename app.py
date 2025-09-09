@@ -3,7 +3,7 @@ from langchain_community.document_loaders import PyPDFLoader
 from langchain_groq import ChatGroq
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
-import matplotlib.pyplot as plt
+
 
 
 
@@ -99,5 +99,6 @@ Respond in a structured way with bullet points.
             result = chain.run({"resume": resume_text, "job": job_description})
         st.subheader("📊 AI Analysis Result")
         st.write(result)
+
 
     
